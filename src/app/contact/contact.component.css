@@ -4,3 +4,13 @@
     background-color: #222;
     color: #9d9d9d;
 }
+.container-footer{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #222;
+    color: #9d9d9d;
+}
+.img-128{
+    width: 60px;
+}
