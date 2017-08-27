@@ -1,0 +1,28 @@
+nav{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 0;
+    font-variant: small-caps;
+}
+hr{
+    width: 20%;
+}
+span{
+    font-size: 25px;
+    font-variant: small-caps;
+}
+.navbar-brand{
+    font-size: 25px;
+}
+/*
+.navbar li a { 
+    color: #000000;
+}
+
+.navbar-brand {
+    color: #000000;
+}
+
+.hr {
+    padding-top: 500px;
+}*/

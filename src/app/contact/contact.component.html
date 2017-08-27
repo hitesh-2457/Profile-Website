@@ -3,24 +3,62 @@
     <div class="col-md-2"></div>
     <div class="col-md-8">
       <h2>
-        Contact Me
+        <br> Contact Me
       </h2>
-
+      <div>
+        <span class="contact">
+            E-mail: hitesh.2457@outlook.com<br>
+            Phone: +1 (682)-(552)-1674
+        </span>
+      </div>
+      <app-alert></app-alert>
+      <form>
+        <br>
+        <div class="row form-group">
+          <div class="col-md-4">
+            <input id="name" type="text" ng-required="" placeholder="*Name" [(ngModel)]="user.name" name="Name">
+          </div>
+          <div class="col-md-4">
+            <input id="mailId" type="email" ng-required="" placeholder="*E-Mail Id" [(ngModel)]="user.email" name="Email">
+          </div>
+          <div class="col-md-4">
+            <input id="subject" type="text" ng-required="" placeholder="*Subject" [(ngModel)]="msg.subject" name="Subject">
+          </div>
+        </div>
+        <div class="row form-group">
+          <br>
+          <br>
+          <textarea class="form-control" id="messages" rows="" cols="" placeholder="Message" [(ngModel)]="msg.body" name="Body"></textarea>
+        </div>
+        <div class="row form-group">
+          <br>
+          <div class="col-md-3">
+          </div>
+          <div class="col-md-3">
+            <button class="btn" type="reset" (click)="formReset()" name="resetBtn">Clear</button>
+          </div>
+          <div class="col-md-3">
+            <button class="btn" type="submit" (click)="formSubmit()" name="submitBtn">Submit</button>
+          </div>
+          <div class="col-md-3">
+          </div>
+        </div>
+      </form>
     </div>
     <div class="col-md-2"></div>
   </div>
-</div>
-<div class="container-footer">
+  <br>
   <div class="row">
     <div class="col-md-2"></div>
     <div class="col-md-8">
       <div class="intro-text col-md-6">
-        <h2>Location</h2>
-        <span class="name">Dallas, Texas, US</span>
+        <span class="name">Location</span><br>
+        <span class="name">The University of Texas</span><br>
+        <span class="name">Dallas, Texas U.S.</span>
       </div>
       <div class="intro-text col-md-6">
-        <h2>Around the Web</h2>
-        <div class="row">
+        <span class="name">Around the Web</span><br>
+        <div class="row" style="padding-left:50px;padding-right:50px">
           <div class="col-md-1">
           </div>
           <div class="col-md-2">

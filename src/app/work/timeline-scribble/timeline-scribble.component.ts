@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-timeline',
-  templateUrl: './timeline.component.html',
-  styleUrls: ['./timeline.component.css']
+  selector: 'app-timeline-scribble',
+  templateUrl: './timeline-scribble.component.html',
+  styleUrls: ['./timeline-scribble.component.css']
 })
-export class TimelineComponent implements OnInit {
+export class TimelineScribbleComponent implements OnInit {
   schoolYear: string;
   puYear: string;
   engYear: string;
