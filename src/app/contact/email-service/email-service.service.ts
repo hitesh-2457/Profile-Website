@@ -9,6 +9,10 @@ export class EmailServiceService {
 
   sendMail(user,msg){
     console.log("Email Service Works!!!");
+    this.alertService.clear();
+
+    
+
     this.alertService.success("Your message was successfully sent to Hitesh Gupta.");
   }
 }

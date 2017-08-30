@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EmailServiceService } from "./email-service/email-service.service";
 import { AlertService } from "./alert-component/alert-service/alert.service";
+import { FormGroup, FormControl, Validators } from "@angular/forms"
 
 @Component({
   selector: 'app-contact',
@@ -9,30 +10,35 @@ import { AlertService } from "./alert-component/alert-service/alert.service";
   providers: [EmailServiceService,AlertService]
 })
 export class ContactComponent implements OnInit {
+  msg={
+    subject: '',
+    body: ''
+  }
+  user={
+    name: '',
+    email: ''
+  }
+  contactForm: any;
 
-  user = null;
-  msg = null;
+  ngOnInit(): void {
+    this.contactForm = new FormGroup({
+      'Name': new FormControl(this.user.name, Validators.required),
+      'Email': new FormControl(this.user.email, Validators.required),
+      'Subject': new FormControl(this.msg.subject, Validators.required),
+      'Body': new FormControl(this.msg.body)
+    });
+  }
+   
   constructor(private emailService: EmailServiceService) { }
 
-  ngOnInit() {
-    this.user = {
-      name: '',
-      email: ''
-    }
-    this.msg = {
-      subject: '',
-      body: ''
-    }
-  }
-
   formReset() {
-    this.user = {
-      name: '',
-      email: ''
-    }
-    this.msg = {
+    this.msg={
       subject: '',
       body: ''
+    }
+    this.user={
+      name: '',
+      email: ''
     }
   }
 

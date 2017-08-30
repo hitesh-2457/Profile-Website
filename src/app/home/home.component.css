@@ -1,13 +1,12 @@
 .container{
     text-align: center;
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 47px;
     background-color: #222;
     color: #9d9d9d;
-    height: 100vh;
 }
 .img-circle{
-    width: 450px;
+    width: 300px;
     padding: 20px;
 }
 hr{

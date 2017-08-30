@@ -2,7 +2,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { WorkComponent } from "./work/work.component";
+import { TimelineComponent } from "./timeline/timeline.component";
 import { LandingPageComponent } from "./landing-page/landing-page.component";
 
 const APP_ROUTES: Routes = [
@@ -12,7 +12,7 @@ const APP_ROUTES: Routes = [
         children: [
             { path: '', component: HomeComponent },
             { path: 'About', component: AboutComponent },
-            { path: 'Timeline', component: WorkComponent },
+            { path: 'Timeline', component: TimelineComponent },
             { path: 'Contact', component: ContactComponent }
         ]
     },

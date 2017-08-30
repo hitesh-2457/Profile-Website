@@ -8,28 +8,26 @@ import { appRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { WorkComponent } from './work/work.component';
-import { TimelineComponent } from './work/timeline/timeline.component';
+import { TimelineComponent } from './timeline/timeline.component';
 import { HomeComponent } from './home/home.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SkillsComponent } from './about/skills/skills.component';
-import { TimelineScribbleComponent } from './work/timeline-scribble/timeline-scribble.component';
 import { ResumeComponent } from "./about/resume/resume.component";
 import { AlertComponent } from './contact/alert-component/alert/alert.component';
+import { AchivementsComponent } from './about/achivements/achivements.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     ContactComponent,
-    WorkComponent,
     TimelineComponent,
     HomeComponent,
     LandingPageComponent,
     SkillsComponent,
-    TimelineScribbleComponent,
     ResumeComponent,
-    AlertComponent
+    AlertComponent,
+    AchivementsComponent
   ],
   imports: [
     BrowserModule,
