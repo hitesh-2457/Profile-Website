@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { EmailServiceService } from "./email-service/email-service.service";
 import { AlertService } from "./alert-component/alert-service/alert.service";
 import { FormGroup, FormControl, Validators } from "@angular/forms"
+import { NGValidators } from 'ng-validators';
 
 @Component({
   selector: 'app-contact',
