@@ -7,11 +7,12 @@
 div{
     padding: 0px;
 }
-.col-md-3{
-    text-align: center;
-}
 .progress{
     border-radius: 0px;
     height: 25px;
     margin: 5px 0px 0px 0px;
+}
+
+.row{
+    margin: 0 0 0 0;
 }

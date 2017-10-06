@@ -17,7 +17,7 @@ const APP_ROUTES: Routes = [
         ]
     },
 
-    // { path: '**', redirectTo: '/'},
+    // { path: '**', redirectTo: ''},
     // {path:'', redirectTo:'/home', pathMatch:'full'}
 ];
 
