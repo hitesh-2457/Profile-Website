@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <hr>
+      <br>
+      <div>
+        <h2 id="projects">Projects</h2>
+      </div>
+      <div row="row">
+        <div class="column" *ngFor="let project of repos">
+          <app-card [project]="project"></app-card>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="padding-top: 50px">
+    <div class="col-sm-9">
+    </div>
+    <div class="col-sm-3">
+      <p>
+        <i class="fa fa-2 fa-github" aria-hidden="true"></i> Powered by GitHub APIs
+      </p>
+    </div>
+  </div>
+</div>

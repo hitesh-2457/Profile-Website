@@ -12,6 +12,9 @@ import { SkillsComponent } from './about/skills/skills.component';
 import { ResumeComponent } from "./about/resume/resume.component";
 import { AlertComponent } from './contact/alert-component/alert/alert.component';
 import { AchivementsComponent } from './about/achivements/achivements.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { GithubService } from './service/github.service';
+import { CardComponent } from './projects/card/card.component';
 
 @NgModule({
   declarations: [
@@ -23,14 +26,16 @@ import { AchivementsComponent } from './about/achivements/achivements.component'
     SkillsComponent,
     ResumeComponent,
     AlertComponent,
-    AchivementsComponent
+    AchivementsComponent,
+    ProjectsComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [GithubService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

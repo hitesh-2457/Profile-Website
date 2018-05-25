@@ -1,0 +1,42 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  box-sizing: content-box;
+  height: 250px;
+}
+
+.card:hover {
+  color: white;
+  background-color: #00000091;
+}
+
+.title {
+  height: 54px;
+  font-size: 18px;
+}
+
+.language {
+  font-size: 14px;
+  float: right;
+  margin-right: 15px;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.description {
+  font-size: 14px;
+  height: 140px;
+}
+
+.container {
+  padding: 10px 15px;
+}
+
+p {
+  margin: 0px;
+}
+a {
+  color: black;
+  text-decoration: none; /* no underline */
+}
