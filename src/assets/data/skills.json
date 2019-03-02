@@ -1,0 +1,173 @@
+{
+    "skills": [
+        {
+            "skillCatag": "Programming Languages",
+            "skillSet": [
+                {
+                    "skillName": "C",
+                    "skillLevel": "Intermediate",
+                    "skillPer": "40%",
+                    "skillStyleClass": ""
+                },
+                {
+                    "skillName": "C#",
+                    "skillLevel": "Intermediate",
+                    "skillPer": "60%",
+                    "skillStyleClass": "progress-bar-success"
+                },
+                {
+                    "skillName": "Java",
+                    "skillLevel": "Intermediate",
+                    "skillPer": "60%",
+                    "skillStyleClass": "progress-bar-info"
+                },
+                {
+                    "skillName": "Python",
+                    "skillLevel": "Intermediate",
+                    "skillPer": "45%",
+                    "skillStyleClass": "progress-bar-warning"
+                },
+                {
+                    "skillName": "Node.JS",
+                    "skillLevel": "Beginner",
+                    "skillPer": "30%",
+                    "skillStyleClass": "progress-bar-success"
+                }
+            ]
+        },
+        {
+            "skillCatag": "Machine Learning and Deep Learning",
+            "skillSet": [
+                {
+                    "skillName": "CNNs",
+                    "skillLevel": "Intermediate",
+                    "skillPer": "65%",
+                    "skillStyleClass": "progress-bar-danger"
+                },
+                {
+                    "skillName": "Decision Trees",
+                    "skillLevel": "Intermediate",
+                    "skillPer": "60%",
+                    "skillStyleClass": "progress-bar-warning"
+                },
+                {
+                    "skillName": "Ensemble Techniques",
+                    "skillLevel": "Beginner",
+                    "skillPer": "40%",
+                    "skillStyleClass": "progress-bar-info"
+                }
+            ]
+        },
+        {
+            "skillCatag": "Front-end Design",
+            "skillSet": [
+                {
+                    "skillName": "Javascript",
+                    "skillLevel": "Intermediate",
+                    "skillPer": "40%",
+                    "skillStyleClass": ""
+                },
+                {
+                    "skillName": "AngularJs",
+                    "skillLevel": "Beginner",
+                    "skillPer": "30%",
+                    "skillStyleClass": "progress-bar-success"
+                },
+                {
+                    "skillName": "Angular2",
+                    "skillLevel": "Intermediate",
+                    "skillPer": "60%",
+                    "skillStyleClass": "progress-bar-info"
+                },
+                {
+                    "skillName": "HTML, CSS and Bootstrap",
+                    "skillLevel": "Intermediate",
+                    "skillPer": "60%",
+                    "skillStyleClass": "progress-bar-danger"
+                }
+            ]
+        },
+        {
+            "skillCatag": "Frameworks",
+            "skillSet": [
+                {
+                    "skillName": "ASP.Net & .Net MVC",
+                    "skillLevel": "Intermediate",
+                    "skillPer": "65%",
+                    "skillStyleClass": "progress-bar-warning"
+                },
+                {
+                    "skillName": "Entity Framework",
+                    "skillLevel": "Intermediate",
+                    "skillPer": "60%",
+                    "skillStyleClass": "progress-bar-info"
+                },
+                {
+                    "skillName": "Django",
+                    "skillLevel": "Beginner",
+                    "skillPer": "30%",
+                    "skillStyleClass": "progress-bar-danger"
+                },
+                {
+                    "skillName": "CherryPy",
+                    "skillLevel": "Beginner",
+                    "skillPer": "25%",
+                    "skillStyleClass": "progress-bar-success"
+                },
+                {
+                    "skillName": "Flask",
+                    "skillLevel": "Beginner",
+                    "skillPer": "25%",
+                    "skillStyleClass": ""
+                }
+            ]
+        },
+        {
+            "skillCatag": "Platforms, Technologies and Tools",
+            "skillSet": [
+                {
+                    "skillName": "Amazon Web Services",
+                    "skillLevel": "Intermediate",
+                    "skillPer": "65%",
+                    "skillStyleClass": "progress-bar-warning"
+                },
+                {
+                    "skillName": "Dockers",
+                    "skillLevel": "Intermediate",
+                    "skillPer": "60%",
+                    "skillStyleClass": "progress-bar-danger"
+                },
+                {
+                    "skillName": "VoIP",
+                    "skillLevel": "Beginner",
+                    "skillPer": "40%",
+                    "skillStyleClass": ""
+                },
+                {
+                    "skillName": "Puppet",
+                    "skillLevel": "Beginner",
+                    "skillPer": "40%",
+                    "skillStyleClass": "progress-bar-success"
+                },
+                {
+                    "skillName": "Ansible",
+                    "skillLevel": "Beginner",
+                    "skillPer": "40%",
+                    "skillStyleClass": "progress-bar-info"
+                },
+                {
+                    "skillName": "RestFul APIs and Micro-services",
+                    "skillLevel": "Intermediate",
+                    "skillPer": "75%",
+                    "skillStyleClass": ""
+                },
+                {
+                    "skillName": "SQL",
+                    "skillLevel": "Intermediate",
+                    "skillPer": "50%",
+                    "skillStyleClass": "progress-bar-warning"
+                }
+            ]
+        }
+    ]
+}

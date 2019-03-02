@@ -4,5 +4,6 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  fileUrl: "https://drive.google.com/uc?export=download&id=1RlPgylk-9xXsZmNGNuI2MmW9MCjtCC-j"
 };

@@ -2,163 +2,18 @@
   <h2>
     Skills and Proficiencies
   </h2>
-  <u>Programming Languages :</u>
-  <div class="row">
-    <div class="col-sm-3">C :</div>
-    <div class="progress col-sm-9">
-      <div style="width: 60%" class="progress-bar active" role="progressbar">
-        Intermediate
+  <div *ngFor="let skill of skills">
+    <u>{{skill.skillCatag}}</u>
+    <div *ngFor="let sk of skill.skillSet">
+      <div class="row">
+        <div class="col-sm-4">{{sk.skillName}} :</div>
+        <div class="progress col-sm-8">
+          <div [ngStyle]="{'width': sk.skillPer}" [ngClass]="sk.skillStyleClass" class="active progress-bar" role="progressbar">
+            {{sk.skillLevel}}
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">C# :</div>
-    <div class="progress col-sm-9">
-      <div style="width: 50%" class="progress-bar progress-bar-success active" role="progressbar">
-        Intermediate
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">Java :</div>
-    <div class="progress col-sm-9">
-      <div style="width: 45%" class="progress-bar progress-bar-info active" role="progressbar">
-        Intermediate
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">Python :</div>
-    <div class="progress col-sm-9">
-      <div style="width: 60%" class="progress-bar progress-bar-warning active" role="progressbar">
-        Intermediate
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">Node.JS :</div>
-    <div class="progress col-sm-9">
-      <div style="width: 30%" class="progress-bar progress-bar-success active" role="progressbar">
-        Beginner
-      </div>
-    </div>
-  </div>
-  <hr>
-  <u>Front-end Design :</u>
-  <div class="row">
-    <div class="col-sm-3">JavaScript :</div>
-    <div class="progress col-sm-9">
-      <div style="width: 30%" class="progress-bar active" role="progressbar">
-        Beginner
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">AngularJs :</div>
-    <div class="progress col-sm-9">
-      <div style="width: 40%" class="progress-bar progress-bar-success active" role="progressbar">
-        Beginner
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">Angular2 :</div>
-    <div class="progress col-sm-9">
-      <div style="width: 60%" class="progress-bar progress-bar-info active" role="progressbar">
-        Intermediates
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">HTML, CSS and Bootstrap :</div>
-    <div class="progress col-sm-9">
-      <div style="width: 50%" class="progress-bar progress-bar-danger active" role="progressbar">
-        Intermediate
-      </div>
-    </div>
-  </div>
-  <hr>
-  <u>Frameworks :</u>
-  <div class="row">
-    <div class="col-sm-3">ASP.Net & .Net MVC :</div>
-    <div class="progress col-sm-9">
-      <div style="width: 65%" class="progress-bar progress-bar-warning active" role="progressbar">
-        Intermediate
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">Django :</div>
-    <div class="progress col-sm-9">
-      <div style="width: 60%" class="progress-bar progress-bar-danger active" role="progressbar">
-        Intermediate
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">CherryPy :</div>
-    <div class="progress col-sm-9">
-      <div style="width: 40%" class="progress-bar progress-bar-info active" role="progressbar">
-        Beginner
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">Flask :</div>
-    <div class="progress col-sm-9">
-      <div style="width: 30%" class="progress-bar progress-bar-success active" role="progressbar">
-        Beginner
-      </div>
-    </div>
-  </div>
-  <hr>
-  <u>Platforms and Technologies :</u>
-  <div class="row">
-    <div class="col-sm-3">Amazon Web Services:</div>
-    <div class="progress col-sm-9">
-      <div style="width: 60%" class="progress-bar progress-bar-info active" role="progressbar">
-        Intermediate
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">Dockers :</div>
-    <div class="progress col-sm-9">
-      <div style="width: 60%" class="progress-bar active" role="progressbar">
-        Intermediate
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">VoIP :</div>
-    <div class="progress col-sm-9">
-      <div style="width: 50%" class="progress-bar progress-bar-warning active" role="progressbar">
-        Intermediate
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">Puppet :</div>
-    <div class="progress col-sm-9">
-      <div style="width: 30%" class="progress-bar progress-bar-danger active" role="progressbar">
-        Beginner
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">RestFul APIs :</div>
-    <div class="progress col-sm-9">
-      <div style="width: 70%" class="progress-bar progress-bar-info active" role="progressbar">
-        Intermediate
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">SQL :</div>
-    <div class="progress col-sm-9">
-      <div style="width: 70%" class="progress-bar progress-bar-primary active" role="progressbar">
-        Intermediate
-      </div>
-    </div>
+    <hr>
   </div>
 </div>

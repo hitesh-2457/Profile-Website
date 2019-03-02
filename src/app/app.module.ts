@@ -15,6 +15,7 @@ import { AchivementsComponent } from './about/achivements/achivements.component'
 import { ProjectsComponent } from './projects/projects.component';
 import { GithubService } from './service/github.service';
 import { CardComponent } from './projects/card/card.component';
+import { SkillsService } from './service/skills.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { CardComponent } from './projects/card/card.component';
     FormsModule,
     HttpModule
   ],
-  providers: [GithubService],
+  providers: [GithubService, SkillsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
