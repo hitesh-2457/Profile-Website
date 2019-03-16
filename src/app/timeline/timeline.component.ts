@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'app/service/data.service';
+import { CustEvent } from 'app/models/custevent';
 
 @Component({
   selector: 'app-timeline',
@@ -6,50 +8,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./timeline.component.css']
 })
 export class TimelineComponent implements OnInit {
-  schoolYear: string;
-  puYear: string;
-  engYear: string;
-  msYear: string;
-  shoretelYear: string;
+  experiences: CustEvent[];
+  degrees: CustEvent[];
 
-  //the month index starts from 0:Jan so (actual month-1)
-  schoolVal = new Date(2009, 3 - 1);
-  puVal = new Date(2011, 3 - 1);
-  engVal = new Date(2015, 6 - 1);
-  msVal = new Date(2019, 6 - 1);
-  shoretelVal = new Date(2017, 7 - 1);
-
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
 
-    this.schoolYear = this.dateDiff(this.schoolVal);
-    this.puYear = this.dateDiff(this.puVal);
-    this.engYear = this.dateDiff(this.engVal);
-    this.msYear = this.dateDiff(this.msVal);
-    this.shoretelYear = this.dateDiff(this.shoretelVal, true);
+    this.dataService.getExperiences().subscribe(
+      (data) => {
+        this.experiences = data["experiences"];
+      }
+    );
 
-  }
+    this.dataService.getDegrees().subscribe(
+      (data) => {
+        this.degrees = data["degrees"];
+      }
+    );
 
-  public dateDiff(date: Date, work: boolean = false) {
-    var str = "  ";
-    var yy = date.getFullYear();
-    var mm = date.getMonth();
-
-    var strPostfix = work ? "" : " years ago. (" + yy + ")";
-
-    if (new Date().getUTCFullYear() - yy > 0) {
-      strPostfix = " years ago. (" + (mm + 1) + "/" + yy + ")";
-      str += new Date().getUTCFullYear() - yy + strPostfix;
-    }
-    else if (new Date().getUTCFullYear() - yy == 0) {
-      strPostfix = " months ago. (" + (mm + 1) + "/" + yy + ")";
-      str += new Date().getMonth() - mm + strPostfix;
-    }
-    else {
-      str += work ? "Currently Working." : "Yet to complete. (" + yy + ")";
-    }
-
-    return str;
   }
 }

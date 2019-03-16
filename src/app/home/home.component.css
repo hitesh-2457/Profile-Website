@@ -4,16 +4,16 @@
     padding-bottom: 20px;
     background-color: #222;
     color: #9d9d9d;
+    height: 100%;
 }
 .email{
     font-family: 'Times New Roman', Times, serif;
 }
 .img-circle{
-    width: 300px;
-    padding: 20px;
-}
-hr{
-    width: 20%;
+  max-width: 300px;
+  padding: 20px;
+  width: 100%;
+  height: auto;
 }
 .img-128{
     width: 40px;
@@ -25,4 +25,7 @@ hr{
 .web-name{
     font-size: 25px;
     padding-bottom: 10px;
+}
+hr {
+  width: 50%
 }

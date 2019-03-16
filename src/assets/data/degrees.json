@@ -1,0 +1,28 @@
+{
+  "degrees": [
+    {
+      "name": "University of Texas at Dallas",
+      "location": "Dallas, Texas",
+      "url": "",
+      "time": "August 2017 - December 2019",
+      "GPA": 3.85,
+      "desc": [
+        "Master of Sciences in Computer Sciences.",
+        "- With constantly growing interests in Technology and Artificial Intelligence, I chose to learn about these advancements."
+      ],
+      "details": [
+        "Graduate Coursework: Algorithm Analysis and Data Structures, Machine Learning, Conv. Neural Network, Natural Language Processing, Web Programming Languages, Human-Computer Interaction, Database Design, Discrete Mathematics, Operating Systems Concepts"
+      ]
+    },
+    {
+      "name": "M.S.Ramaiah instute of technology",
+      "location": "Banglore, India",
+      "url": "",
+      "time": "September 2011 - July 2015",
+      "GPA": 3.54,
+      "desc": [
+        "Bachelor of Engineering in Electronics and Communications."
+      ]
+    }
+  ]
+}

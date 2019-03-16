@@ -1,0 +1,71 @@
+{
+  "experiences": [
+    {
+      "name": "Nvidia Corp.",
+      "location": "Santa Clara, California",
+      "url": "https://www.nvidia.com",
+      "role": "Software Engineer Intern",
+      "time": "Jan 2019 - March 2019",
+      "desc": [
+        "Implemented new features on existing java-based system, that is used for automating complex builds and tests.",
+        "Improved the application in terms of efficiency and usability for end user."
+      ]
+    },
+    {
+      "name": "Mavenir Inc.",
+      "location": "Richardson, Texas",
+      "url": "https://mavenir.com/",
+      "role": "Technical Intern",
+      "time": "May 2018 - August 2018",
+      "desc": [
+        "Worked with the Product security and quality team to improve the security on production systems."
+      ],
+      "details": [
+        "Constructed Mavenir Benchmark, a set of system security rules based on DoD’s STIG and CIS Benchmark.",
+        "Automated all the security checks using Ansible, with compatibility across operating systems.",
+        "Explored the usage of OWASP Top Ten Project and tools related to it."
+      ]
+    },
+    {
+      "name": "ShoreTel Inc.",
+      "location": "Bangalore, India",
+      "url": "https://www.shoretel.com/",
+      "role": "Software Engineer",
+      "time": "May 2016 - July 2017",
+      "desc": [
+        "Worked as a Full-stack Developer on C# and .net tech stack."
+      ],
+      "details": [
+        "Developed a web application based on .Net MVC and Entity Framework with ASPX and Angular.",
+        "Improved the performance of the web application by optimizing and refactoring the code base."
+      ]
+    },
+    {
+      "name": "ShoreTel Inc.",
+      "location": "Bangalore, India",
+      "url": "https://www.shoretel.com/",
+      "role": "Associate Software Engineer",
+      "time": "August 2015 - May 2016",
+      "desc": [
+        "Worked as part of CTO-staff, were responsible for developing Proof of Concepts on leveraging Public cloud for an year."
+      ],
+      "details": [
+        "One-Click deployment of the VOIP architecture onto the Public Cloud(AWS CloudFormation) by designing python scripts and puppet modules.",
+        "Ported On-Premise VOIP based solution on to Public Cloud (using various AWS services) along with developing scripts to recompile and build the code base.",
+        "Containerized various Components to run on Dockers and modified the VOIP solution architecture to leverage the Public Cloud features."
+      ]
+    },
+    {
+      "name": "ShoreTel Inc.",
+      "location": "Bangalore, India",
+      "url": "https://www.shoretel.com/",
+      "role": "Software Engineer Intern",
+      "time": "April 2015 - August 2015",
+      "desc": [],
+      "details": [
+        "Developed scripts to recompile and build various VOIP components code base and deployed on CentOS.",
+        "Modified the Kamailio based Session Border Controller to support deployment in the Public Cloud."
+      ]
+    }
+  ]
+}

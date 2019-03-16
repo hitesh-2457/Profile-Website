@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SkillsService } from '../../service/skills.service';
+import { DataService } from '../../service/data.service';
 import { Skill } from '../../models/skill';
 
 @Component({
@@ -10,7 +10,7 @@ import { Skill } from '../../models/skill';
 export class SkillsComponent implements OnInit {
   skills: Skill[];
 
-  constructor(private skillsService: SkillsService) { }
+  constructor(private skillsService: DataService) { }
 
   ngOnInit() {
     this.skillsService.getSkills().subscribe(

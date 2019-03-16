@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 
 @Injectable()
-export class SkillsService {
+export class DataService {
 
   constructor(private http: Http) { }
 
@@ -12,5 +12,13 @@ export class SkillsService {
 
   getAchievements() {
     return this.http.get('assets/data/achievements.json').map((res) => { return res.json() });
+  }
+
+  getExperiences() {
+    return this.http.get('assets/data/experiences.json').map((res) => { return res.json() });
+  }
+
+  getDegrees(){
+    return this.http.get('assets/data/degrees.json').map((res) => { return res.json() });
   }
 }

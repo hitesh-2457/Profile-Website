@@ -4,13 +4,30 @@ nav{
   border: 0;
   font-variant: small-caps;
 }
-hr{
-  width: 20%;
-}
 span{
   font-size: 25px;
   font-variant: small-caps;
 }
 .navbar-brand{
   font-size: 25px;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+.div1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+}
+.div2 {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  bottom: 0;
+  overflow:scroll;
+  overflow-x: hidden;
+  padding: 0;
 }

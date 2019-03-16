@@ -6,8 +6,8 @@
     <u>{{skill.skillCatag}}</u>
     <div *ngFor="let sk of skill.skillSet">
       <div class="row">
-        <div class="col-sm-4">{{sk.skillName}} :</div>
-        <div class="progress col-sm-8">
+        <div class="col-xs-4">{{sk.skillName}} :</div>
+        <div class="progress col-xs-8">
           <div [ngStyle]="{'width': sk.skillPer}" [ngClass]="sk.skillStyleClass" class="active progress-bar" role="progressbar">
             {{sk.skillLevel}}
           </div>

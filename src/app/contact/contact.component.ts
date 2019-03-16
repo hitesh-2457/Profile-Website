@@ -1,14 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { EmailServiceService } from "./email-service/email-service.service";
-import { AlertService } from "./alert-component/alert-service/alert.service";
 import { FormGroup, FormControl, Validators } from "@angular/forms";
 import { NGValidators } from 'ng-validators';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css'],
-  providers: [EmailServiceService,AlertService]
+  styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
   msg={
@@ -29,8 +26,8 @@ export class ContactComponent implements OnInit {
       'Body': new FormControl(this.msg.body)
     });
   }
-   
-  constructor(private emailService: EmailServiceService) { }
+
+  constructor() { }
 
   formReset() {
     this.msg={
@@ -46,6 +43,5 @@ export class ContactComponent implements OnInit {
   formSubmit() {
     console.log(this.user);
     console.log(this.msg);
-    this.emailService.sendMail(this.user,this.msg);
     }
 }

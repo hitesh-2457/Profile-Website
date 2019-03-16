@@ -9,13 +9,12 @@ import { ContactComponent } from './contact/contact.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { HomeComponent } from './home/home.component';
 import { SkillsComponent } from './about/skills/skills.component';
-import { ResumeComponent } from "./about/resume/resume.component";
-import { AlertComponent } from './contact/alert-component/alert/alert.component';
+import { ResumeComponent } from "./resume/resume.component";
 import { AchivementsComponent } from './about/achivements/achivements.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { GithubService } from './service/github.service';
 import { CardComponent } from './projects/card/card.component';
-import { SkillsService } from './service/skills.service';
+import { DataService } from './service/data.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +25,6 @@ import { SkillsService } from './service/skills.service';
     HomeComponent,
     SkillsComponent,
     ResumeComponent,
-    AlertComponent,
     AchivementsComponent,
     ProjectsComponent,
     CardComponent
@@ -36,7 +34,7 @@ import { SkillsService } from './service/skills.service';
     FormsModule,
     HttpModule
   ],
-  providers: [GithubService, SkillsService],
+  providers: [GithubService, DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

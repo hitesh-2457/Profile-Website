@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SkillsService } from 'app/service/skills.service';
+import { DataService } from 'app/service/data.service';
 import { Achievement } from 'app/models/achievement';
 
 @Component({
@@ -10,7 +10,7 @@ import { Achievement } from 'app/models/achievement';
 export class AchivementsComponent implements OnInit {
   achievements: Achievement[] = [];
 
-  constructor(private skillsService: SkillsService) { }
+  constructor(private skillsService: DataService) { }
 
   ngOnInit() {
     this.skillsService.getAchievements().subscribe(
