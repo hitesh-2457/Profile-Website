@@ -18,7 +18,7 @@
 
 .language {
   font-size: 14px;
-  float: right;
+  float: left;
   margin-right: 15px;
   padding: 2px;
   border-radius: 5px;
@@ -26,7 +26,7 @@
 
 .description {
   font-size: 14px;
-  height: 140px;
+  height: 110px;
 }
 
 .container {

@@ -9,11 +9,9 @@
       <div class="description">
         <p>{{ project.description }}</p>
       </div>
-      <div class="language">
-        <p>
-          <i class="glyphicon glyphicon-tag"></i>
-          <b>{{ project.language }}</b>
-        </p>
+      <div class="language" *ngFor="let lang of project.languages">
+        <i class="glyphicon glyphicon-tag"></i>
+        <b>{{ lang }}</b>
       </div>
     </div>
   </a>

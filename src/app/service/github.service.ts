@@ -15,4 +15,8 @@ export class GithubService {
     let url = this.baseUrl + "users/"+this.username+"/repos";
     return this.http.get(url).map((res: Response)=>(res.json()));
   }
+
+  listAllLang(url: string){
+    return this.http.get(url).map((res: Response)=>(res.json()));
+  }
 }

@@ -14,7 +14,8 @@ export class Repo {
   public created_at: Date;
   public updated_at: Date;
   public pushed_at: Date;
-  public language: string;
+  public languages_url: string;
+  public languages: string[];
 
   constructor(data:any){
     this.id = data["id"];
@@ -26,6 +27,7 @@ export class Repo {
     this.created_at = data["created_at"];
     this.updated_at = data["updated_at"];
     this.pushed_at = data["pushed_at"];
-    this.language = data["language"];
+    this.languages_url = data["languages_url"];
+    this.languages = [];
   }
 }
