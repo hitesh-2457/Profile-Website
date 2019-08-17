@@ -32,6 +32,12 @@
                     "skillLevel": "Beginner",
                     "skillPer": "30%",
                     "skillStyleClass": "progress-bar-success"
+                },
+                {
+                    "skillName": "Scala",
+                    "skillLevel": "Beginner",
+                    "skillPer": "30%",
+                    "skillStyleClass": "progress-bar-danger"
                 }
             ]
         },
@@ -119,6 +125,18 @@
                     "skillLevel": "Beginner",
                     "skillPer": "25%",
                     "skillStyleClass": ""
+                },
+                {
+                    "skillName": "Spring & Spring Boot",
+                    "skillLevel": "Beginner",
+                    "skillPer": "35%",
+                    "skillStyleClass": "progress-bar-info"
+                },
+                {
+                    "skillName": "Spark & Spark-stream",
+                    "skillLevel": "Beginner",
+                    "skillPer": "35%",
+                    "skillStyleClass": "progress-bar-danger"
                 }
             ]
         },
