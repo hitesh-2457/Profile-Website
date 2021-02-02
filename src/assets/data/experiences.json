@@ -1,6 +1,16 @@
 {
   "experiences": [
     {
+      "name": "Oracle Cloud Infrastructure",
+      "location": "Seattle, Washington",
+      "url": "https://www.oracle.com/cloud/",
+      "role": "Software Engineer",
+      "time": "Jan 2020 - Present",
+      "desc": [
+        "Currently working with the Identity and Access Managment team."
+      ]
+    },
+    {
       "name": "Nvidia Corp.",
       "location": "Santa Clara, California",
       "url": "https://www.nvidia.com",
